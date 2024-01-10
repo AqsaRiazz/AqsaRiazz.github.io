@@ -1,0 +1,934 @@
+/* Body styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+header {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+/* Header video styles */
+#headerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Header content overlay styles */
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ecf0f1;
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Specific styling for h1 in header content */
+.header-content h1 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 50px;
+}
+
+/* Specific styling for paragraphs in header content */
+.header-content p {
+  font-family: 'Lobster', sans-serif;
+  font-size: 20px;
+}
+
+/* Default styling for h1 and paragraphs */
+h1 {
+  font-size: 36px;
+  color: #f7f7f7;
+}
+
+p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Styling for h2 in Dubai section */
+.dubai-section h2 {
+  font-family: 'Lobster', sans-serif;
+}
+
+/* Styling for h2 in Attractions section */
+.attractions-section h2 {
+  font-family: 'Lobster', sans-serif;
+}
+
+
+
+
+
+/* Responsive styles for header on smaller screens */
+@media only screen and (max-width: 600px) {
+  header {
+    height: auto;
+  }
+
+  .header-content {
+    padding: 20px;
+  }
+
+  #headerVideo {
+    height: auto;
+  }
+}
+
+/* Styling for the Dubai section */
+.dubai-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #173c5f;
+  color: #ecf0f1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styling for h2 in the Dubai section */
+.dubai-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Styling for paragraphs in the Dubai section */
+.dubai-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+
+/* Styling for responsive images in the Dubai section */
+.dubai-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+}
+
+/* Styling for the navigation menu */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Styling for navigation links */
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+/* Styling for navigation links on hover */
+nav a:hover {
+  color: #ffe137;
+}
+
+/* Styling for the mobile navigation toggle button */
+.toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Styling for the bars in the mobile navigation toggle button */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ecf0f1;
+  margin: 5px 0;
+}
+
+/* Styling for the cta button */
+.cta-button {
+  display: inline-block;
+  background-color: #0ea7ff;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Styling for the cta button on hover */
+.cta-button:hover {
+  background-color: #e07108;
+}
+
+
+/* Styling for the Attractions section */
+.attractions-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #0d253d;
+  color: #ecf0f1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styling for h2 in the Attractions section */
+.attractions-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the container holding attraction items */
+.attractions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for individual attraction items */
+.attraction {
+  width: 30%;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for attraction items */
+.attraction:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for images within attraction items */
+.attraction img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Styling for text content within attraction items */
+.attraction p {
+  font-size: 16px;
+  padding: 15px;
+  margin: 0;
+  background-color: #e2610a;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+
+
+/* Media Query for screens up to 1065px width */
+@media only screen and (max-width: 1065px) {
+
+  .cta-button {
+    margin-top: 20px;
+  }
+
+  /* Padding adjustment for Dubai and Attractions sections */
+  .dubai-section,
+  .attractions-section {
+    padding: 20px;
+  }
+
+  /* Width adjustment for attraction items */
+  .attraction {
+    width: 48%;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  /* Display and styling adjustments for navigation menu */
+  nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #2980b9;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Display adjustment for the mobile navigation toggle button */
+  .toggle {
+    display: block;
+  }
+
+  /* Margin adjustment for the cta button */
+  .cta-button {
+    margin-top: 20px;
+  }
+
+  /* Padding adjustment for Dubai and Attractions sections */
+  .dubai-section,
+  .attractions-section {
+    padding: 20px;
+  }
+
+  /* Width adjustment for attraction items */
+  .attraction {
+    width: 48%;
+  }
+}
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for header section */
+  header {
+    height: auto;
+  }
+
+  /* Padding adjustment for header content */
+  .header-content {
+    padding: 20px;
+  }
+
+  /* Adjustments for header video */
+  #headerVideo {
+    height: auto;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Width adjustment for attraction items */
+  .attraction {
+    width: 100%;
+  }
+
+  /* Padding adjustment for Dubai and Attractions sections */
+  .dubai-section,
+  .attractions-section {
+    padding: 10px;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Adjustments for header section */
+  header {
+    height: auto;
+  }
+
+  /* Adjustments for header video */
+  #headerVideo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* Padding adjustment for header content */
+  .header-content {
+    padding: 20px;
+  }
+}
+
+
+/* Media Query for screens up to 400px width */
+@media only screen and (max-width: 400px) {
+  /* Padding adjustment for header content, Dubai, and Attractions sections */
+  .header-content,
+  .dubai-section,
+  .attractions-section {
+    padding: 10px;
+  }
+
+  /* Width adjustment for attraction items */
+  .attraction {
+    width: 100%;
+  }
+}
+
+/* Styling for the Holiday Deals Section */
+.holiday-deals-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #0ab2f5;
+  box-sizing: border-box;
+}
+
+/* Styling for h2 in the Holiday Deals Section */
+.holiday-deals-section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+/* Styling for h3 in the Holiday Deals Section */
+h3 {
+  color: #ff8800;
+  font-size: 25px;
+}
+
+/* Styling for paragraphs in the Holiday Deals Section */
+.holiday-deals-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Styling for the container holding holiday deals */
+.holiday-deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for  holiday deals */
+.holiday-deal {
+  width: 30%;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for holiday deals */
+.holiday-deal:hover {
+  transform: scale(1.05);
+}
+
+
+/* Styling for images within holiday deals */
+.holiday-deal img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Styling for details within holiday deals */
+.deal-details {
+  padding: 15px;
+  text-align: left;
+  background-color: #2980b9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Media Query for screens up to 1065px width */
+@media only screen and (max-width: 1065px) {
+  /* Width adjustment for holiday deals */
+  .holiday-deal {
+    width: 48%;
+  }
+}
+
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  /* Padding adjustment for the Holiday Deals Section */
+  .holiday-deals-section {
+    padding: 20px;
+  }
+
+  /* Width adjustment for holiday deals */
+  .holiday-deal {
+    width: 100%;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Padding adjustment for the Holiday Deals Section */
+  .holiday-deals-section {
+    padding: 10px;
+  }
+
+  /* Width adjustment for holiday deals */
+  .holiday-deal {
+    width: 100%;
+  }
+}
+
+
+/* Styling for the Perfect Trip Section */
+.perfect-trip-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #8c0da5;
+  color: #ecf0f1;
+  box-sizing: border-box;
+}
+
+/* Styling for h2 in the Perfect Trip Section */
+.perfect-trip-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the container holding perfect trip items */
+.perfect-trip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for individual perfect trip items */
+.perfect-trip-item {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Styling for images within perfect trip items */
+.perfect-trip-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  border-radius: 50%;
+}
+
+/* Media Query for screens up to 1065px width */
+@media only screen and (max-width: 1065px) {
+  /* Width adjustment for perfect trip items */
+  .perfect-trip-item {
+    width: 48%;
+  }
+}
+
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  /* Padding adjustment for the Perfect Trip Section */
+  .perfect-trip-section {
+    padding: 20px;
+  }
+
+  /* Width adjustment for perfect trip items */
+  .perfect-trip-item {
+    width: 100%;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Padding adjustment for the Perfect Trip Section */
+  .perfect-trip-section {
+    padding: 10px;
+  }
+
+  /* Width adjustment for perfect trip items */
+  .perfect-trip-item {
+    width: 100%;
+  }
+}
+
+/* Styling for the Discover Our Tours Section */
+.discover-tours-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #0099ff;
+  box-sizing: border-box;
+}
+
+/* Styling for h2 in the Discover Our Tours Section */
+.discover-tours-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the container holding tour items */
+.tour-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for each tour items */
+.tour-item {
+  width: 30%;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Hover effect for tour items */
+.tour-item:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for images within tour items */
+.tour-item img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Styling for details within tour items */
+.tour-details {
+  padding: 15px;
+  text-align: left;
+  background-color: #ac49c5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Styling for the book now button within tour items */
+.book-now-button {
+  display: none;
+  background-color: #2ba1f0;
+  color: #ecf0f1;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Show the "Book Now" button on hover */
+.tour-item:hover .book-now-button {
+  display: inline-block;
+}
+
+
+/* Media Query for screens up to 1065px width */
+@media only screen and (max-width: 1065px) {
+  /* Width adjustment for tour items */
+  .tour-item {
+    width: 48%;
+  }
+}
+
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  /* Padding adjustment for the Discover Our Tours Section */
+  .discover-tours-section {
+    padding: 20px;
+  }
+
+  /* Width adjustment for tour items */
+  .tour-item {
+    width: 100%;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Padding adjustment for the Discover Our Tours Section */
+  .discover-tours-section {
+    padding: 10px;
+  }
+
+  /* Width adjustment for tour items */
+  .tour-item {
+    width: 100%;
+  }
+}
+
+/* Styling for the Best Places Section */
+.best-places-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #191d47;
+  color: #ffa806;
+  box-sizing: border-box;
+}
+
+/* Styling for h2 in the Best Places Section */
+.best-places-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Styling for p in the Best Places Section */
+.best-places-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Styling for the container holding place items */
+.places-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling for each place items */
+.place-item {
+  position: relative;
+  width: 30%;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect for place items */
+.place-item:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for images within place items */
+.place-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Styling for details within place items */
+.place-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ecf0f1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: none;
+}
+
+/* Display details on hover */
+.place-item:hover .place-details {
+  display: block;
+}
+
+/* Media Query for screens up to 1065px width */
+@media only screen and (max-width: 1065px) {
+  /* Width adjustment for place items */
+  .place-item {
+    width: 48%;
+  }
+}
+
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  /* Padding adjustment for the Best Places Section */
+  .best-places-section {
+    padding: 20px;
+  }
+
+  /* Width adjustment for place items */
+  .place-item {
+    width: 100%;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Padding adjustment for the Best Places Section */
+  .best-places-section {
+    padding: 10px;
+  }
+
+  /* Width adjustment for place items */
+  .place-item {
+    width: 100%;
+  }
+}
+
+
+/* Styling for the Contact Section */
+.contact-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #01478d;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Heading styles within the Contact Section */
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles within the Contact Section */
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Styling for the form within the Contact Section */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling for form groups within the form */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Styling for labels within form groups */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for input and textarea elements */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Styling for the submit button */
+button {
+  background-color: #0059ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #eba000;
+}
+
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  /* Padding adjustment for the form */
+  form {
+    padding: 0 20px;
+  }
+}
+
+/* Media Query for screens up to 600px width */
+@media only screen and (max-width: 600px) {
+  /* Padding adjustment for input and textarea elements */
+  input,
+  textarea {
+    padding: 8px;
+  }
+
+  /* Padding adjustment for the submit button */
+  button {
+    padding: 8px 16px;
+  }
+}
+
+/* Footer Styles */
+.footer-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 20px; 
+}
+
+/* Styles for the content within the footer */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Styles for the 'about-us' and 'contact-info' sections within the footer */
+.about-us,
+.contact-info {
+  flex: 1;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+/* Heading styles for 'about-us' and 'contact-info' sections */
+.about-us h3,
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e07108; 
+}
+
+/* Paragraph styles for 'about-us' and 'contact-info' sections */
+.about-us p,
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Additional styling for 'contact-info' paragraphs */
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+/* Styling for social icons within the footer */
+.social-icons {
+  margin-top: 10px;
+}
+
+/* Styling for individual social icons within the footer */
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+
+/* Media Query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Centering text for 'about-us' and 'contact-info' sections */
+  .about-us,
+  .contact-info {
+    text-align: center; 
+  }
+}
+
+/* Media Query for screens with a minimum width of 772px */
+@media only screen and (min-width: 772px) {
+  /* Margin adjustment for 'about-us' section */
+  .about-us {
+    margin-right: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

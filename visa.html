@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+    <style>
+        
+/* Visa Section */
+.visa-section {
+  background-image: url('pexels-photo-9094864.jpeg'); 
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+.visa-section p{
+  font-family: 'Lobster', sans-serif;
+}
+.visa-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.visa-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Lobster', sans-serif;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; 
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .visa-title {
+    font-size: 36px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .visa-title {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+  }
+}
+
+
+    /* Visa Options Section */
+    .visa-options-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .visa-option {
+      width: 250px; 
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .visa-option:hover {
+      transform: scale(1.05);
+    }
+
+    .visa-option img {
+      width: 100%; 
+      height: 150px; 
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .visa-option h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .visa-option p {
+      margin-bottom: 15px;
+      color: #555;
+      
+    }
+
+
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 400px;
+    background: url('contact.webp')  center/cover no-repeat; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+ 
+  
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      .hero-section {
+        height: 300px;
+        background-size: cover;
+      }
+
+      .hero-section h1 {
+        font-size: 24px;
+      }
+      
+      
+    }
+    @media only screen and (max-width: 400px) {
+      .hero-section {
+        background-size: 100% 100%;
+      }
+    }
+
+    </style>
+</head>
+<body>
+   
+        <div class="navbar">
+            <div class="toggle" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="visa.html">Visa</a>
+            <a href="tours.html">Tours</a>
+            <a href="booking.html">Booking</a>
+            </nav>
+          </div>
+        <!-- Visa Section -->
+        <section class="visa-section">
+          <div class="visa-content">
+            <h1 class="visa-title">Visa Information</h1>
+            <p>Plan your visit to Dubai with ease. Learn about visa requirements and apply for your visa online.</p>
+            <a href="#" class="cta-button">Apply for Visa</a>
+          </div>
+        </section>
+      
+
+          <!-- Visa Options Section -->
+  <section class="visa-options-section">
+    <div class="visa-option" onclick="showVisaDetails('30 Days', 'Book a hassle-free single-entry visa for Dubai valid for 30 days to enjoy one of the world\'s most marvelous cities.')">
+      <img src="81.jpg" alt="Single Entry Dubai Visa for 30 Days">
+      <h3>Single Entry Dubai Visa for 30 Days</h3>
+      <p>30 days</p>
+      <p>Easy</p>
+    </div>
+
+    <div class="visa-option" onclick="showVisaDetails('60 Days', 'Want to stay more in Dubai as a tourist? Opt for this 60 days tourist visa to explore more in the country.')">
+      <img src="img6.jpg" alt="Single Entry Dubai Visa for 60 Days">
+      <h3>Single Entry Dubai Visa for 60 Days</h3>
+      <p>60 days</p>
+      <p>Easy</p>
+    </div>
+
+    <div class="visa-option" onclick="showVisaDetails('90 Days', 'Extend your stay in Dubai with a 90 days tourist visa. Explore the city and its wonders at your own pace.')">
+        <img src="istock-583691500-1024x576.jpg" alt="Single Entry Dubai Visa for 90 Days">
+        <h3>Single Entry Dubai Visa for 90 Days</h3>
+        <p>90 days</p>
+        <p>Easy</p>
+      </div>
+  </section>
+
+        
+<!-- Footer Section -->
+<footer class="footer-section">
+  <!-- Container for footer content -->
+  <div class="footer-content">
+      <!-- About Us Section -->
+      <div class="about-us">
+          <!-- Heading for the About Us section -->
+          <h3>About Us</h3>
+          <!-- Description  -->
+          <p>Discover the magic of Dubai with our expertly curated tours and holiday deals. Explore iconic landmarks, indulge in luxury experiences, and savor exquisite cuisine.</p>
+      </div>
+
+      <!-- Contact Information Section -->
+      <div class="contact-info">
+          <!-- Heading for the Contact Us section -->
+          <h3>Contact Us</h3>
+          <p>Have questions or need assistance? Reach out to us!</p>
+          <p>Phone: +1 (555) 123-4567</p>
+
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+              <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+        <script src="index.js"></script>
+
+</body>
+</html>

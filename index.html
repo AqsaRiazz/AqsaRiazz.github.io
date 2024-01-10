@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css"> 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet"/>
+<title>Dubai Tourism</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+<header>
+  <!-- Video background with welcome message -->
+  <video id="headerVideo" width="100%" height="auto" autoplay loop muted>
+      <source src="DOWN DUBAI.mp4" type="video/mp4">
+  </video>
+  <!-- Content overlay on video -->
+  <div class="header-content">
+      <h1>Welcome to Dubai</h1>
+      <p>Explore the beauty and wonders of Dubai</p>
+      <a href="#" class="cta-button">Plan Your Trip</a>
+  </div>
+</header>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <!-- Hamburger menu toggle button -->
+  <div class="toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+  <!-- Navigation links -->
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="visa.html">Visa</a>
+      <a href="tours.html">Tours</a>
+      <a href="booking.html">Booking</a>
+  </nav>
+</div>
+
+<!-- Dubai Section -->
+<section class="dubai-section">
+  <div class="dubai-content">
+      <!-- Text content about Dubai -->
+      <div class="text">
+          <h2>Welcome to Dubai</h2>
+          <p>Discover the magic of Dubai, a city of contrasts where tradition meets modernity. Explore iconic landmarks,
+              indulge in luxury shopping, and savor exquisite cuisine.</p>
+          <!-- Image representing Dubai -->
+          <img src="dubai.jpg" alt="Dubai Image" class="dubai-image">
+      </div>
+  </div>
+</section>
+
+<!-- Tourist Attractions Section -->
+<section class="attractions-section">
+  <!-- Section heading -->
+  <h2>Tourist Attractions</h2>
+  
+  <!-- Container for displaying tourist attractions -->
+  <div class="attractions-container">
+      <!-- Images and descriptions of tourist attractions -->
+      <div class="attraction">
+          <img src="img1.webp" alt="Attraction 1">
+          <p>Dubai Future Museum</p>
+      </div>
+      
+      <div class="attraction">
+          <img src="img6.jpg" alt="Attraction 2">
+          <p>Dubai Safari</p>
+      </div>
+      
+      <div class="attraction">
+          <img src="dubai-marina-yacht-club.jpg" alt="Attraction 3">
+          <p>Dubai Marina Yacht</p>
+      </div>
+  </div>
+</section>
+
+
+  
+ <!-- Holiday Deals Section -->
+<section class="holiday-deals-section">
+  <!-- Section heading -->
+  <h2>Holiday Deals in Dubai</h2>
+  <!-- Subheading providing additional information about the deals -->
+  <h3>From flights to stays, discover great offers for cheap holidays</h3>
+
+  <!-- Container for displaying holiday deals -->
+  <div class="holiday-deals-container">
+      <!-- Deal 1 -->
+      <div class="holiday-deal">
+          <!-- Image representing the deal  -->
+          <img src="shutterstock_1119964028.jpg" alt="Flight Image">
+          <!-- Details of the deal -->
+          <div class="deal-details">
+              <p>Abu Dhabi → Dubai</p>
+              <p>Flight</p>
+              <p>Fri 12 Jan · One way</p>
+              <p>AUH to DXB</p>
+              <p>From AED 414.91 per traveller</p>
+          </div>
+      </div>
+
+      <!-- Deal 2 -->
+      <div class="holiday-deal">
+          <!-- Image representing the deal  -->
+          <img src="img9.jpg" alt="Hotel Image">
+          <!-- Details of the deal -->
+          <div class="deal-details">
+              <p>Atana Hotel, hotel in Dubai</p>
+              <p>Stay</p>
+              <p>Atana Hotel</p>
+              <p>Dubai, United Arab Emirates</p>
+              <p>From AED 503.78 per night</p>
+          </div>
+      </div>
+
+      <!-- Deal 3 -->
+      <div class="holiday-deal">
+          <!-- Image representing the deal  -->
+          <img src="img10.jpg" alt="Attraction Image">
+          <!-- Details of the deal -->
+          <div class="deal-details">
+              <p>Admission to Global Village in Dubai</p>
+              <p>Attraction</p>
+              <p>Dubai, United Arab Emirates</p>
+              <p>Dubai’s biggest, multicultural festival park</p>
+              <p>From AED 22.39</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Build Your Perfect Trip Section -->
+<section class="perfect-trip-section">
+  <!-- Section heading -->
+  <h2>Build Your Perfect Trip</h2>
+
+  <!-- Container for displaying items  -->
+  <div class="perfect-trip-container">
+      <!-- Item 1 -->
+      <div class="perfect-trip-item">
+          <!-- Logo for the first item -->
+          <img src="logo1.jpg" alt="Logo 1">
+          <!-- Brief description of the first item -->
+          <p>Build your perfect trip</p>
+          <p>Book the best flights, stays and more – all in one place</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="perfect-trip-item">
+          <!-- Logo for  the second item -->
+          <img src="logo2.jpg" alt="Logo 2">
+          <!-- Brief description of the second item -->
+          <p>Stay flexible</p>
+          <p>Keep your travel plans flexible with free cancellation options</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="perfect-trip-item">
+          <!-- Logo for the third item -->
+          <img src="logo3.jpg" alt="Logo 3">
+          <!-- Brief description of the third item -->
+          <p>Get 24/7 support</p>
+          <p>Contact us anytime and get support in multiple languages</p>
+      </div>
+  </div>
+</section>
+
+
+<!-- Discover Our Tours Section -->
+<section class="discover-tours-section">
+  <!-- Section heading -->
+  <h2>Discover Our Tours</h2>
+
+  <!-- Container for displaying tour items -->
+  <div class="tour-container">
+      <!-- Tour 1 -->
+      <div class="tour-item" onmouseover="toggleBookNowButton(1)" onmouseout="toggleBookNowButton(1)">
+          <!-- Image representing the first tour -->
+          <img src="tour1.webp" alt="Tour 1">
+          
+          <!-- Details of the first tour -->
+          <div class="tour-details">
+              <p>Atlantis Aquaventure Waterpark Ticket</p>
+              <p>Have a blast at Atlantis Hotel's Aquaventure park. Splash around, try water activities, and make memories. Perfect for water enthusiasts.</p>
+              <p>AED 300.00</p>
+              <!-- Button to book the first tour -->
+              <button class="book-now-button" id="bookNowBtn1">Book Now</button>
+          </div>
+      </div>
+
+      <!-- Tour 2 -->
+      <div class="tour-item" onmouseover="toggleBookNowButton(2)" onmouseout="toggleBookNowButton(2)">
+          <!-- Image representing the second tour -->
+          <img src="tour2.jpg" alt="Tour 2">
+
+          <!-- Details of the second tour -->
+          <div class="tour-details">
+              <p>Burj Khalifa at the Top admission tickets</p>
+              <p>Climb Burj Khalifa, the world's tallest tower, for breathtaking views of Dubai. Experience the cityscape from this iconic super tall building</p>
+              <p>AED 175.00</p>
+              <!-- Button to book the second tour -->
+              <button class="book-now-button" id="bookNowBtn2">Book Now</button>
+          </div>
+      </div>
+
+      <!-- Tour 3 -->
+      <div class="tour-item" onmouseover="toggleBookNowButton(3)" onmouseout="toggleBookNowButton(3)">
+          <!-- Image representing the third tour -->
+          <img src="tour3.jpg" alt="Ferrari World Abu Dhabi Ticket">
+
+          <!-- Details of the third tour -->
+          <div class="tour-details">
+              <p>Ferrari World Abu Dhabi Ticket</p>
+              <p>Ferrari World Abu Dhabi, the first-ever Ferrari theme park, celebrates the passion and legacy of racing in a legendary experience</p>
+              <p>AED 340.00</p>
+              <!-- Button to book the third tour -->
+              <button class="book-now-button" id="bookNowBtn3">Book Now</button>
+          </div>
+      </div>
+
+      
+
+  </div>
+</section>
+
+
+<!-- Best Places to Visit Section -->
+<section class="best-places-section">
+  <!-- Section heading -->
+  <h2>Best Places to Visit in Dubai</h2>
+  <!-- Subheading providing additional information about exploring tours, activities, and more -->
+  <p>Make the most out of your holidays with tours, activities, and more</p>
+
+  <!-- Container for displaying best places to visit -->
+  <div class="places-container">
+      <!-- Place 1 -->
+      <div class="place-item" onclick="showPlaceName('Dubai Miracle Garden Tickets')">
+          <!-- Image representing the first place -->
+          <img src="place1.webp" alt="Dubai Miracle Garden Tickets">
+          <!-- Details of the first place -->
+          <div class="place-details">
+              <p>Dubai Miracle Garden Tickets</p>
+          </div>
+      </div>
+
+      <!-- Place 2 -->
+      <div class="place-item" onclick="showPlaceName('Dubai Desert Safari with BBQ Dinner')">
+          <!-- Image representing the second place -->
+          <img src="place2.jpg" alt="Dubai Desert Safari with BBQ Dinner">
+          <!-- Details of the second place -->
+          <div class="place-details">
+              <p>Dubai Desert Safari with BBQ Dinner</p>
+          </div>
+      </div>
+
+      <!-- Place 3 -->
+      <div class="place-item" onclick="showPlaceName('Sharjah city tour from Dubai')">
+          <!-- Image representing the third place -->
+          <img src="sharjah.jpg" alt="Sharjah city tour from Dubai">
+          <!-- Details of the third place -->
+          <div class="place-details">
+              <p>Sharjah city tour from Dubai</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+  
+<!-- Contact Section -->
+<section class="contact-section">
+  <!-- Section heading -->
+  <h2>Contact Us</h2>
+
+  <p>Have questions or need assistance? Reach out to us!</p>
+
+  <!-- Form for submitting contact information and messages -->
+  <form id="contactForm" onsubmit="submitForm(event)">
+      <!-- Full Name input field -->
+      <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <!-- Email input field -->
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Message textarea -->
+      <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+  </form>
+</section>
+
+ 
+<!-- Footer Section -->
+<footer class="footer-section">
+  <!-- Container for footer content -->
+  <div class="footer-content">
+      <!-- About Us Section -->
+      <div class="about-us">
+          <!-- Heading for the About Us section -->
+          <h3>About Us</h3>
+          <!-- Description  -->
+          <p>Discover the magic of Dubai with our expertly curated tours and holiday deals. Explore iconic landmarks, indulge in luxury experiences, and savor exquisite cuisine.</p>
+      </div>
+
+      <!-- Contact Information Section -->
+      <div class="contact-info">
+          <!-- Heading for the Contact Us section -->
+          <h3>Contact Us</h3>
+          <p>Have questions or need assistance? Reach out to us!</p>
+          <p>Phone: +1 (555) 123-4567</p>
+
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+              <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  
+  <!-- Include JavaScript file -->
+  <script src="index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css"> 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet" />
+  <title>Dubai Tours</title>
+  <style>
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #ffffff;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 400px;
+      background: url('img13.webp') center/cover no-repeat; 
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+      color: #ffffff;
+      font-family: 'Lobster', sans-serif;
+    }
+
+    /* Tours Section */
+    .tours-section {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tour-box {
+      border: 1px solid #ffffff; 
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 400px; 
+      transition: transform 0.3s;
+    }
+
+    .tour-box:hover {
+      transform: scale(1.05);
+    }
+
+    .tour-box img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .tour-details {
+      padding: 15px;
+      height: 250px; 
+      overflow: hidden;
+      background-color: #007BFF;
+      color: #fff; 
+    }
+
+    .tour-details h2 {
+      font-size: 20px; 
+      color: #ffffff;
+      font-family: 'Kalnia', serif;
+    }
+
+    .tour-details p {
+      margin: 10px 0;
+      font-size: 16px; 
+    }
+
+    .tour-details .duration {
+      font-weight: bold;
+      color: #fff; 
+    }
+
+    .tour-details .price {
+      font-weight: bold;
+      color: #f7b604; 
+      font-size: 18px; 
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      .hero {
+        height: 300px;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .tour-box {
+        height: auto;
+      }
+
+      .tour-box img {
+        height: 200px;
+      }
+
+      .tour-details {
+        height: auto;
+      }
+
+      .tour-details h2 {
+        font-size: 18px; 
+      }
+
+      .tour-details p {
+        font-size: 14px;
+      }
+
+      .tour-details .price {
+        font-size: 16px; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="visa.html">Visa</a>
+      <a href="tours.html">Tours</a>
+      <a href="booking.html">Booking</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Dubai Tours</h1>
+  </div>
+
+  <div class="tours-section">
+    <!-- Tour 1 -->
+    <div class="tour-box">
+      <img src="11.jpg" alt="Dubai Aquarium">
+      <div class="tour-details">
+        <h2>Dubai Aquarium Ticket</h2>
+        <p>Explore marine life at Dubai Aquarium. Enjoy a captivating underwater experience with diverse and fascinating species.</p>
+        <p class="duration">3 hours</p>
+        <p class="price">AED 140.00</p>
+      </div>
+    </div>
+
+    <!-- Tour 2 -->
+    <div class="tour-box">
+      <img src="TfZgY5Ao-dubai_garden_glow1-1200x800.jpg" alt="Dubai Garden Glow">
+      <div class="tour-details">
+        <h2>Dubai Garden Glow </h2>
+        <p>Experience a dazzling show of lights at Dubai Garden Glow. Explore various themed parks for an enchanting evening.</p>
+        <p class="duration">3 hours</p>
+        <p class="price">AED 65.00</p>
+      </div>
+    </div>
+
+    <!-- Tour 3 -->
+    <div class="tour-box">
+      <img src="self-drive-boat4.jpg" alt="Jet Car Ride">
+      <div class="tour-details">
+        <h2>Jet Car Ride in Dubai</h2>
+        <p>Feel the thrill of a high-speed jet car ride in Dubai's waters. Experience breathtaking views of Dubai from the sea.</p>
+        <p class="duration">20 minutes</p>
+        <p class="price">AED 700.00</p>
+      </div>
+    </div>
+
+    <!-- Tour 4 -->
+    <div class="tour-box">
+      <img src="P4183424.webp" alt="The Green Planet Dubai">
+      <div class="tour-details">
+        <h2>The Green Planet Dubai</h2>
+        <p>Immerse yourself in the rich biodiversity of a tropical forest at The Green Planet Dubai. Explore over 3,000 plants and animals.</p>
+        <p class="duration">5 hours</p>
+        <p class="price">AED 160.00</p>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- Footer Section -->
+<footer class="footer-section">
+  <!-- Container for footer content -->
+  <div class="footer-content">
+      <!-- About Us Section -->
+      <div class="about-us">
+          <!-- Heading for the About Us section -->
+          <h3>About Us</h3>
+          <!-- Description  -->
+          <p>Discover the magic of Dubai with our expertly curated tours and holiday deals. Explore iconic landmarks, indulge in luxury experiences, and savor exquisite cuisine.</p>
+      </div>
+
+      <!-- Contact Information Section -->
+      <div class="contact-info">
+          <!-- Heading for the Contact Us section -->
+          <h3>Contact Us</h3>
+          <p>Have questions or need assistance? Reach out to us!</p>
+          <p>Phone: +1 (555) 123-4567</p>
+
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+              <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
